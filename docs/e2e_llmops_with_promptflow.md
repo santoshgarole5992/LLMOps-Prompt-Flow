@@ -1,4 +1,4 @@
-# Set up e2e LLMOps with Prompt flow and GitHub (preview)
+LLMOps with Prompt flow and GitHub
 
 Azure Machine Learning allows you to integrate with [GitHub Actions](https://docs.github.com/actions) to automate the machine learning lifecycle. Some of the operations you can automate are:
 
