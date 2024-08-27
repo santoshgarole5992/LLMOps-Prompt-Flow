@@ -13,7 +13,7 @@ Deployment of prompt flow models
 In this article, you learn about using Azure Machine Learning to set up an end-to-end LLMOps pipeline that runs a web classification flow that classifies a website based on a given URL. The flow is made up of multiple LLM calls and components, each serving different functions. All the LLMs used are managed and store in your Azure Machine Learning workspace in your Prompt flow connections
 
 
-# .Prerequisites
+# Prerequisites
 An Azure subscription. If you don't have an Azure subscription, create a free account before you begin. Try the free or paid version of Machine Learning.
 
 A Machine Learning workspace.
@@ -200,15 +200,12 @@ With the Prompt flow model registered in the Machine learning workspace, you are
 Prompt flow: > Runs
 
 
-
-
-Deploy Prompt Flow in AzureML with GitHub Actions
+# Deploy Prompt Flow in AzureML with GitHub Actions
 This scenario includes prebuilt workflows for deploying a model to an endpoint for real-time scoring. You may run the workflow to test the performance of the model in your Azure Machine Learning workspace.
 
 Online Endpoint
 In your GitHub project repository , select Actions
 
-Screenshot of GitHub actions page.
 
 Select the deploy-pf-online-endpoint-pipeline from the workflows listed on the left and click Run workflow to execute the online endpoint deployment pipeline workflow. The steps in this pipeline will create an online endpoint in your Machine Learning workspace, create a deployment of your model to this endpoint, then allocate traffic to the endpoint.
 
@@ -217,10 +214,8 @@ Screenshot of GitHub action for online endpoint.
 Once completed, you will find the online endpoint deployed in the Azure Machine Learning workspace and available for testing.
 
 
-##Moving to Production Environment :
+# Moving to Production Environment :
 
 This example scenario can be run and deployed both for Dev and Prod branches and environments. When you are satisfied with the performance of the prompt evaluation pipeline, Prompt Flow model, and deployment in Testing, Dev pipelines and models can be replicated and deployed in the Production environment.
 
 The provided sample prompt flow run, evaluation, and GitHub workflows serve as a foundation for customizing your prompt engineering code and data for production deployment.
-
-
