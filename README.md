@@ -1,4 +1,4 @@
-##Set up End-to-End LLMOps Pipeline with Prompt Flow, OpenAI Studio and GitHub Action
+# Set up End-to-End LLMOps Pipeline with Prompt Flow, OpenAI Studio and GitHub Action
 
 Azure Machine Learning allows you to integrate with GitHub Actions to automate the machine learning lifecycle. Some of the operations you can automate are:
 
@@ -13,7 +13,7 @@ Deployment of prompt flow models
 In this article, you learn about using Azure Machine Learning to set up an end-to-end LLMOps pipeline that runs a web classification flow that classifies a website based on a given URL. The flow is made up of multiple LLM calls and components, each serving different functions. All the LLMs used are managed and store in your Azure Machine Learning workspace in your Prompt flow connections
 
 
-Prerequisites
+# .Prerequisites
 An Azure subscription. If you don't have an Azure subscription, create a free account before you begin. Try the free or paid version of Machine Learning.
 
 A Machine Learning workspace.
@@ -137,7 +137,7 @@ Adjust gpt-35-turbo to the name of your GPT 3.5 Turbo deployment associated with
 
 
 
-Prompt Run, Evaluation, and Deployment
+# Prompt Run, Evaluation, and Deployment
 Steps:
 
 In this flow, you will learn This training pipeline contains the following steps:
@@ -175,11 +175,10 @@ This pipeline will start the prompt flow run and evaluate the results. When the 
 
 In your GitHub project repository, select Actions
 
-Screenshot of GitHub actions page.
+
 
 Select the run-eval-pf-pipeline.yml from the workflows listed on the left and the click Run Workflow to execute the Prompt flow run and evaluate workflow. This will take several minutes to run.
 
-Screenshot of Pipeline Run in GitHub.
 
 The workflow will only register the model for deployment, if the accuracy of the classification is greater than 60%. You can adjust the accuracy thresold in the run-eval-pf-pipeline.yml file in the jobMetricAssert section of the workflow file. The section should look like:
 
