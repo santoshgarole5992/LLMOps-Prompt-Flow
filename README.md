@@ -1,6 +1,6 @@
 # Set up End-to-End LLMOps Pipeline with Prompt Flow, OpenAI Studio and GitHub Action
 
-Azure Machine Learning allows you to integrate with GitHub Actions to automate the machine learning lifecycle. Some of the operations you can automate are::
+Azure Machine Learning allows you to integrate with GitHub Actions to automate the machine learning lifecycle. Some of the operations you can automate are:
 
 Running Prompt flow after a Pull Request
 
